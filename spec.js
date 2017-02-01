@@ -1,7 +1,7 @@
 describe('Protractor Demo App', function() {
 it('should have a title', function() {
 
-browser.get('http://localhost:6001/vote');
+browser.get('https://votedemo.mybluemix.net/');
 element(by.model('user.voterName')).sendKeys('Rajesh Kanumetta');
 element(by.model('user.voterEmail')).sendKeys('rkanumetta@miraclesoft.com');
 element(by.model('user.voterOrganization')).sendKeys('Miracle');
@@ -41,7 +41,7 @@ expect(browser.getTitle()).toEqual('Voter App | Angular Demo');
 
 describe('Protractor Demo App', function() {
 it('should have a title', function() {
-browser.driver.get('http://localhost:6001/vote');
+browser.driver.get('https://votedemo.mybluemix.net/');
 element(by.css('[ng-click="vote($event)"]')).click();
 element(by.css('[ng-click="checkResult()"]')).click();
 browser.sleep(1000);
